@@ -1,48 +1,59 @@
 * {
-  font: 100% Helvetica, sans-serif;
+  font-family: roboto-regular;
   outline: 0;
   margin: 0;
   padding: 0;
+
+  -ms-touch-action: pan-x pan-y;
+  touch-action: manipulation;
+
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-.container {
-  padding: 50px; }
+body {
+  overflow-x: hidden;
+}
 
-input[type="text"], input[type="textarea"] {
-  border: 0;
-  border-bottom: 2px solid #000;
-  font-size: 12pt;
-  padding-bottom: 2px; }
-  input[type="text"]:focus, input[type="textarea"]:focus {
-    border-bottom: 2px solid blue; }
+.header {
+  width: 100vw;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #795548;
+  z-index: 1000;
+  box-shadow: 0 0 15px #222;
+}
 
-button, .btn-default, .btn-negative, .btn-positive {
-  display: block;
-  padding: 10px 15px;
-  border: 0;
-  box-shadow: 0 0 5px #777;
+.header-menus {
+  float: right;
+  color: white;
+  margin-right: 100px;
+}
+
+.header-menu {
+  display: inline-block;
+  font-size: 14pt;
+  margin-right: 40px;
+  margin-top: 20px;
   cursor: pointer;
-  border-radius: 3px;
-  font-size: 12pt; }
+}
 
-.btn-default {
-  background-color: #2196F3;
-  color: white; }
-  .btn-default:hover {
-    background-color: #1E88E5; }
+.header-space {
+  width: 100vw;
+  height: 70px;
+}
 
-.btn-negative {
-  background-color: #F44336;
-  color: white; }
-  .btn-negative:hover {
-    background-color: #E53935; }
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: #795548;
+}
 
-.btn-positive {
-  background-color: #43A047;
-  color: white; }
-  .btn-positive:hover {
-    background-color: #388E3C; }
-
-/*# sourceMappingURL=default.css.map */
+.section {
+  width: 100vw;
+  height: 500px;
+  position: relative;
+}
