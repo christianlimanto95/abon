@@ -13,6 +13,7 @@
 </head>
 <body>
 <div class="header">
+	<div class="logo">Abon Cap Jempol</div>
 	<div class="header-menus">
 		<div class="header-menu">Home</div>
 		<div class="header-menu">Products</div>
